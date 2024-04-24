@@ -16,20 +16,29 @@ h1 {
     padding-left: 1rem;
 }
 
-.navigation {
-    display: flex;
+nav {
     background: black;
-    text-align: center;
-    padding: 12px;
-    margin-top: 53px;
+    margin: 44px auto;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+nav ul li {
+    flex: 1 1 100%;
 }
 
-.navigation a {
+nav a {
+    display: block;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    text-align: center;
+    padding: 1rem;
     font-size: .8em;
-    flex: 1 1 100%;
+}
+nav a:hover {
+    border: 1px solid #fff;
 }
 
 main {
