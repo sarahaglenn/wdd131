@@ -1,9 +1,11 @@
 body {
     display: grid;
     grid-template: 150px auto 130px / 1fr;
+    justify-items: center;
 }
 
 header {
+    width: 100%;
     position: relative;
     grid-column: 1 / 3;
     background: rgb(229, 173, 255);
@@ -24,6 +26,7 @@ nav {
     bottom: 0px;
     background: rgb(67, 42, 79);
     padding: .5em;
+    justify-items: center;
 }
 
 nav a {
@@ -44,6 +47,7 @@ nav a:hover {
 nav ul {
     list-style-type: none;
     display: flex;
+    text-align: center;
 }
 
 nav ul li {
@@ -52,9 +56,10 @@ nav ul li {
 
 main {
     display: grid;
-    grid-gap: .3em;
+    grid-gap: 1rem;
     grid-template-columns: 3fr 2fr;
     padding: 1em;
+    max-width: 1200px;
 }
 
 .card {
@@ -78,9 +83,11 @@ hr {
     padding: 1rem;
     line-height: 1.5em;
 }
+
 main ul {
     list-style-type: none;
 }
+
 main ul li {
     padding: 1rem;
     color: #1b2432;
@@ -88,6 +95,9 @@ main ul li {
 
 main ul a {
     color: #1b2432;
+}
+main a:hover {
+    color: blue;
 }
 
 h2 {
@@ -115,6 +125,7 @@ img {
 }
 
 footer {
+    width: 100%;
     grid-column: 1 / 3;
     text-align: center;
     background: rgb(67, 42, 79);
