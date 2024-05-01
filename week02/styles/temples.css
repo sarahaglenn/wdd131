@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    justify-items: center;
+}
+h1 {
+    font-family: "Lugrasimo", cursive;
+    padding: 1rem 2.4rem;
+}
+header {
+    background: #D6EADF;
+    align-items: center;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    padding: 1rem;
+}
+main {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.container {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(19.4em, 1fr)); 
+    grid-gap: 20px;
+    place-items: center;
+}
+#menu {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: .5rem .74rem;
+    background: lightgray;
+    color: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#menu::before {
+    content: "≡";
+}
+nav {
+    background: #1C3144;
+    border: solid 3px #1C3144;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+nav li {
+    display: none;
+}
+nav a:hover {
+    background: lightgray;
+    color: #1C3144;
+}
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+figure {
+    text-align: center;
+    padding: 1rem;
+}
+img {
+    max-width: 100%;
+}
+footer {
+    background: #D6EADF;
+    text-align: center;
+    padding: 1rem;
+}
+  
+  
