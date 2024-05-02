@@ -23,20 +23,16 @@ studentReport.forEach (function (item) {
     }
 });
 
-for (let item in studentReport) {
-    if (item < LIMIT) {
-        console.log(item);
+for (const i in studentReport) {
+    if (studentReport[i] < LIMIT) {
+        console.log(studentReport[i]);
     }
 }
 
-const options = {weekday: 'long'};
+const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const today = new Date();
-let todaystring = new Intl.DateTimeFormat('en-US', options).format(today);
+let day = today.getDay();
 for (let i = 1; i <= DAYS; i++) {
-    let nextday = new Date();
-    nextday.setDate(today.getDate() + i);
-    let nextdaystring = new Intl.DateTimeFormat('en-US', options).format(nextday);
-    item = document.createElement("li");
-    item.textContent = nextdaystring;
-    output[0].appendChild(item);
+    console.log(weekdays[(day + 1) % 6]);
+    day += 1;
 }
