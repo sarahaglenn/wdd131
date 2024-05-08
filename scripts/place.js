@@ -7,8 +7,7 @@ const windSpeed = 14.4; //windspeed in km/h
 const list = document.querySelector("#weather ul")
 
 function calculateWindChill(temp, wind) {
-    var windchill = 13.12 + (0.6215 * temp) - (11.37 * Math.pow(wind, 0.16)) + (0.3965 * temp * Math.pow(wind, 0.16));
-    return windchill.toFixed(0); 
+    return Math.round(13.12 + (0.6215 * temp) - (11.37 * Math.pow(wind, 0.16)) + (0.3965 * temp * Math.pow(wind, 0.16)));
 }
 
 const li = document.createElement('li');
