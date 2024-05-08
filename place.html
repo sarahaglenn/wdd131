@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sarah Glenn">
+    <meta name="description" content="Facts about Sweden">
+    <title>Sweden Facts</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <h1>SWEDEN</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/sweden-large.webp" media="(min-width: 1000px)">
+            <img src="images/sweden-medium.webp" alt="Red houses in a green field">
+        </picture>
+        <div id="data">
+            <h2>Data</h2>
+            <ul>
+                <li><b>Capital:</b>Stockholm</li>
+                <li><b>Population:</b>10,551,707</li>
+                <li><b>Life expectancy:</b>83.16 years</li>
+                <li><b>Language:</b>Swedish</li>
+                <li><b>National Day:</b>6 June</li>
+                <li><b>Employment rate:</b>69.4%</li>
+                <li><b>Total area:</b>528,447 sq km</li>
+                <li><b>Currency:</b>Swedish Kronor</li>
+        </div>
+        <div id="weather">
+            <h2>Weather</h2>
+            <img id="sun" src="images/partly-cloudy.svg" alt="sun behind clouds" width="50">
+            <ul>
+                <li><b>Temperature:</b>7 °C</li>
+                <li><b>Conditions:</b>Partly cloudy</li>
+                <li><b>Wind:</b>SE at 14.4 kmh</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Sarah Glenn | Sweden</p>
+        <span id="lastModified"></span>
+    </footer>
+</body>
+</html>

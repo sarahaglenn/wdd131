@@ -1,0 +1,43 @@
+@media (min-width: 1000px) {
+    main {
+        position: relative;
+    }
+    picture img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0;
+    }
+    #data, #weather {
+        position: absolute;
+        background-color: var(--background-color-transparent);
+        padding-top: 2.5rem;
+        align-items: self-start;
+    }
+    #data {
+        top: 1%;
+        left: 7%;
+        width: 360px;
+    }
+    #weather {
+        width: 300px;
+        position: absolute;
+        right: 7%;
+        bottom: 3%;
+    }
+    #sun {
+        display: none;
+    }
+    #weather h2::after {
+        content: " ⛅️"
+    }
+    h2 {
+        background-color: #8e1007e4;
+        font-family: "Lato", sans-serif;
+        font-size: 1.6rem;
+        text-align: center;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        color: white;
+    }
+}
