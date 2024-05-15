@@ -80,7 +80,7 @@ nav a:hover {
     grid-gap: 20px;
     place-items: center;
     text-align: center;
-    margin: .5rem;
+    margin: .5rem 1.5rem;
 }
 section {
     background-color: #1c31442e;
