@@ -1,0 +1,44 @@
+body {
+    padding: 1rem;
+  }
+  
+  table {
+    font-family: arial;
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+    
+    caption {
+      caption-side: bottom;
+      padding: .2rem;
+      font-size: .9rem;    
+    }
+  
+    th, td {
+      padding: .5em 1rem;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      white-space: pre;
+    }
+    
+    thead {
+      background: black;
+      color: white;
+    th {
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+    tr:nth-last-child(1) {
+        background-color: #333;
+      }
+    }
+    tbody {
+      text-align: center;
+      
+      tr:nth-child(even) {
+        background: #eee;
+      }
+    }
+  }
+  .blank {
+      background: black;
+  }

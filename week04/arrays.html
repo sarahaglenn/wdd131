@@ -1,0 +1,41 @@
+<!-- arrays.html -->
+<html>
+  <head>
+    <title>Array Activities</title>
+    <script src="arrays.js"></script>
+  </head>
+  <body>
+    <ul id="myList"></ul>
+  </body>
+  <script>
+    const myArray = ['one', 'two', 'three']
+    const htmlArray = myArray.map(
+        (item) => `<li>${item}</li>`
+    );
+    document.getElementById("myList").innerHTML = htmlArray.join("");
+    
+    const letterGrades = ['A', 'B', 'A'];
+    function toGPA(letter) {
+        let points = 0;
+        if (letter === 'A') {
+            points = 4;
+        } 
+        else if (letter === 'B') {
+            points = 3;
+        }
+        return points;
+    }
+    const gpaGrades = letterGrades.map(toGPA);
+    console.log(gpaGrades);
+    const gpa = gpaGrades.reduce((total, grade) => total + grade, 0) / gpaGrades.length;
+    console.log(gpa);
+
+    const fruits = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
+    const someFruits = fruits.filter((fruit) => fruit.length > 6);
+    console.log(someFruits);
+
+    const numbers = [12, 34, 21, 54];
+    const luckNumber = 21;
+    console.log(numbers.indexOf(luckNumber));
+  </script>
+</html>

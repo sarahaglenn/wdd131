@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    align-items: center;
+}
+h1 {
+    font-family: "Lugrasimo", cursive;
+    padding: 1rem 2.4rem;
+    font-size: 2.5rem;
+}
+header {
+    background: #D6EADF;
+    align-items: center;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+main {
+    margin: 1rem auto;
+}
+
+#menu {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: .5rem 1.4rem;
+    background: #1C3144;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#menu::before {
+    content: "≡";
+}
+nav {
+    background: #1C3144;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+nav li {
+    display: none;
+}
+nav a:hover {
+    background: lightgray;
+    color: #1C3144;
+}
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19.4em, 1fr));
+    grid-gap: 20px;
+    place-items: center;
+    text-align: center;
+    margin: .5rem;
+}
+section {
+    background-color: #1c31442e;
+    padding: 0;
+    border: solid 1px #1c31444a;
+    border-radius: 1%;
+    min-height: 400px;
+    min-width: 250px;
+}
+h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+p {
+    font-weight: 300;
+}
+b {
+    font-weight: 700;
+    color: #1C3144;
+}
+img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 1rem;
+}
+footer {
+    background: #D6EADF;
+    text-align: center;
+    padding: 1rem;
+}
+  
+  
