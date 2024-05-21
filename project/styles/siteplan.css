@@ -1,0 +1,108 @@
+:root {
+    --main-font-color: rgb(66, 66, 66);
+    --primary-color: #326857;
+    --secondary-color: #34405a;
+    --accent-color: #FF595E;
+    --text-on-color: rgb(252, 246, 239);
+    --heading-font-family: "Wix Madefr Display", sans-serif;
+}
+* {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 300;
+    color: var(--main-font-color);
+}
+main {
+    display: inline-block;
+}
+
+table {
+    margin: 0 auto;
+}
+p {
+    margin: 0 2rem;
+    font-size: 1.1rem;
+}
+h1 {
+    font-family: var(--heading-font-family);
+    font-weight: 400;
+    color: var(--primary-color);  
+    text-align: center;
+}
+li {
+    font-size: 1.1rem;
+}
+
+h2 {
+    color: var(--text-on-color);
+    background: var(--primary-color);
+    text-align: center;
+    font-weight: 400;
+}
+#fonts :nth-child(2) {
+    font-family: "Wix Madefr Display", sans-serif;
+    font-weight: 400;
+}
+#fonts :nth-child(3) {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+table td {
+    border: 1px solid lightgray;
+}
+thead td {
+    padding: 1rem;
+}
+#primary {
+    background: var(--primary-color);
+    padding: 1rem;
+    border: 1px solid black;
+}
+#secondary {
+    background: var(--secondary-color);
+    padding: 1rem;
+    border: 1px solid black;
+}
+#support1 {
+    background: #FF595E;
+    padding: 1rem;
+    border: 1px solid black;
+}
+#support2 {
+    background: #5C0029;
+    padding: 1rem;
+    border: 1px solid black;
+}
+#support3 {
+    /* background: #F5DAB8; */
+    background: var(--text-on-color);
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+figure {
+    float: left;
+    padding: .5rem;
+    margin: 0 auto;
+    border: dashed 2px var(--accent-color);
+}
+#wireframe {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    margin-top: 2rem;
+}
+footer, footer p {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--text-on-color);
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+#currentyear, #lastModified {
+    color: var(--text-on-color);
+}
