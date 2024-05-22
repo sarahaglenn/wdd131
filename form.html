@@ -20,7 +20,7 @@
         <form method="get" action="review.html" class="wf1">
             <label>Product Name* 
                 <select name="productName" id="productName" required>
-                    <option value="">Select a Product... &#9662;</option>
+                    <option value="">Select a Product... &#9662; </option>
                 </select>
             </label>
             <div class="rating">Overall Rating* </div>
@@ -29,14 +29,14 @@
             <label><input type="radio" id="threestar" name="rating" value="oneStar" required>⭐️⭐️⭐️</label>
             <label><input type="radio" id="fourstar" name="rating" value="oneStar" required>⭐️⭐️⭐️⭐️</label>
             <label><input type="radio" id="fivestar" name="rating" value="oneStar" required>⭐️⭐️⭐️⭐️⭐️</label>
-            <label id="dateInstall">Date Installed* <input type="date" name="installDate" required></label>
+            <label id="dateInstall">Date Installed* <input id="installDate" type="date" name="installDate" required></label>
             <div>What features did you find most useful? <b><br>(check all that apply) </b></div>
-            <label><input type="checkbox" name="durability" value="yes"> Durability</label>
-            <label><input type="checkbox" name="ease" value="yes"> Ease of Use</label>
-            <label><input type="checkbox" name="safety" value="yes"> Safety</label>
-            <label><input type="checkbox" name="design" value="yes"> Visual Design</label>
-            <label id="review">Leave a Review (optional)<textarea name="review" rows="5" cols="60" ></textarea></label>
-            <label id="username">Username (optional) <input type="text" name="username"></label>
+            <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+            <label><input type="checkbox" id="ease" name="ease" value="yes"> Ease of Use</label>
+            <label><input type="checkbox" id="safety" name="safety" value="yes"> Safety</label>
+            <label><input type="checkbox" id="design" name="design" value="yes"> Visual Design</label>
+            <label id="reviewLbl">Leave a Review (optional)<textarea id="review" name="review" rows="5" cols="60" ></textarea></label>
+            <label id="usernameLbl">Username (optional) <input type="text" id="username" name="username"></label>
             <input type="submit" value="Publish My Review">
         </form>
     </main>

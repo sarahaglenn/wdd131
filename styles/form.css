@@ -50,7 +50,7 @@ main {
 .wf1  {
     display: inline;
 }
-.wf1 div, #dateInstall, #review, #username {
+.wf1 div, #dateInstall, #reviewLbl, #usernameLbl {
     padding-top: 1.8rem;
 }
 
