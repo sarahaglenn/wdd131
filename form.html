@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="A page created for WDD131 to practice created a user friendly form.">
+    <meta name="author" content="Sarah Glenn">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <label>Product Name* 
+                <select name="productName" id="productName" required>
+                </select>
+            </label>
+            <div class="rating">Overall Rating* </div>
+            <label><input type="radio" id="onestar" name="rating" value="oneStar" required>⭐️</label>
+            <label><input type="radio" id="twostar" name="rating" value="oneStar" required>⭐️⭐️</label>
+            <label><input type="radio" id="threestar" name="rating" value="oneStar" required>⭐️⭐️⭐️</label>
+            <label><input type="radio" id="fourstar" name="rating" value="oneStar" required>⭐️⭐️⭐️⭐️</label>
+            <label><input type="radio" id="fivestar" name="rating" value="oneStar" required>⭐️⭐️⭐️⭐️⭐️</label>
+            <label id="dateInstall">Date Installed* <input type="date" name="installDate" required></label>
+            <div>What features did you find most useful? <b><br>(check all that apply) </b></div>
+            <label><input type="checkbox" name="durability" value="yes"> Durability</label>
+            <label><input type="checkbox" name="ease" value="yes"> Ease of Use</label>
+            <label><input type="checkbox" name="safety" value="yes"> Safety</label>
+            <label><input type="checkbox" name="design" value="yes"> Visual Design</label>
+            <label id="review">Leave a Review (optional)<textarea name="review" rows="5" cols="60" ></textarea></label>
+            <label id="username">Username (optional) <input type="text" name="username"></label>
+            <input type="submit" value="Publish My Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ┃ Sarah Glenn ┃ Sweden</p>
+        <span id="lastModified"></span>
+    </footer>
+</body>
+</html>
