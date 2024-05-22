@@ -33,7 +33,4 @@ const products = [
   const optionsHTML = products.map((p) => 
     `<option value="${p.id}">${(p.name)}</option>`
   );
-  optionsHTML.unshift(`<option value="">Select a Product... &#9662;</option>`)
-  document.getElementById("productName").innerHTML = optionsHTML.join("");
-
-  // Use JavaScript to populate the Product Name options where the array's name field is used for the select option display and the array's id is used for the value field.  `<option value="">Select a Product...</option>` + 
+  document.getElementById("productName").innerHTML += optionsHTML.join("");
