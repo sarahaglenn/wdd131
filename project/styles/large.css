@@ -1,6 +1,11 @@
+@media (min-width: 2560px) {
+    .hero-text h1 {
+        font-size: 5vw;
+    }
+}
 :root {
     --main-font-color: rgb(66, 66, 66);
-    --primary-color: #326857;
+    --primary-color: #2b5a4b;
     --secondary-color: #34405a;
     --accent-color: #FF595E;
     --text-on-color: rgb(252, 246, 239);
@@ -19,23 +24,23 @@
     max-width: 100%;
     display: block;
     margin: 0 auto;
-}
-.hero-image {
-    position: relative;
-}
-.background {
     filter: brightness(70%);
     opacity: .8;
+    border-radius: 0;
 }
+.hero {
+    position: relative;
+}
+
 .hero-text {
     text-align: center;
     position: absolute;
-    font-size: 3rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     width: 100%;
+    font-size: 5vw;
 }
 
 /* ---------- navigation bar ------------ */
@@ -81,7 +86,7 @@ main {
 }
 img {
     margin: .5rem;
-
+    border-radius: 6px;
 }
 .wrapper {
     display: grid;
@@ -118,7 +123,7 @@ button, .wf1 input[type="submit"] {
     max-width: 400px;
     height: 70px;
     font-size: 1.7rem;
-    background-image: linear-gradient(var(--accent-color), #bf4045);
+    background-image: linear-gradient(#ff595f86, var(--accent-color));
     border: none;
     border-radius: 6px;
     box-shadow: 1px 1px 4px #999;
@@ -139,59 +144,62 @@ footer {
 /* ----------outdoor page ------------ */
 #outdoor {
     max-width: 100%;
-    margin: 20px auto;
 }
-.heading p, .pics p {
+.heading h1 {
+    margin-top: 25px;
+}
+.pics {
+    width: 100%;
     margin: 0 auto;
 }
-
-.pics {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-around;
+.heading p {
+    margin: 10px auto;
 }
+.pics p {
+    margin: auto 5px;
+}
+#skip {
+    margin-right: 5%;
+}
+
 #weather {
+    color: var(--secondary-color);
     min-width: 200px;
     max-width: 300px;
     margin: 10px auto;
-    text-align: left;
+    text-align: center;
     padding: 1rem;
-    background-color: #ff595f86;
+    background-color: #b1afaf2b;
+    border: solid 2px var(--primary-color);
     border-radius: 6px;
-}
-.container {
-    display: flex;
+    box-shadow: 1px 1px 4px #999;
 }
 
-#sun {
-    display: none;
+#weatherIcon {
+    background-color: #6e87bc;
+    margin-top: 15px;
+    margin-bottom: 0;
 }
-#weather h2::after {
-    content: " ⛅️"
+#celsius, #fahrenheit {
+    color: var(--secondary-color);
+    padding: .5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
 }
+.degree-button {
+    text-align: center;
+}
+
 li {
     list-style: none;
 }
+.fishing, .skiing, .hiking {
+    display: flex;
+    padding: 0 10px 0 10px;
+    margin: 0 auto;
+    justify-content: center;
+}
 
-#fish {
-    /* float: left; */
-    margin: 0 auto;
-    max-width: 400px;
-    height: auto;
-}
-#ski {
-    /* float: right; */
-    margin: 0 auto;
-    max-width: 250px;
-    height: auto;
-}
-#hike {
-    /* float: left; */
-    margin: 0 auto;
-    max-width: 400px;
-    height: auto;
-}
 /* ---------- Newsletter Form Page ------------ */
 
 .wf1 fieldset {
@@ -242,4 +250,13 @@ li {
     color: var(--secondary-color);
     max-width: 75%;
     margin: 20px auto;
+}
+
+#thanks p, #thanks h1 {
+    margin: 3rem auto 1rem auto;
+}
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }

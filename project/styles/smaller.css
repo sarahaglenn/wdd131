@@ -1,7 +1,7 @@
-@media (max-width: 30em) {
-    h1 {
-        font-size: 2rem;
-    }
+@media (max-width: 824px) {
+    /* h1 {
+        font-size: 2rem; -- could add taller banner image to allow for two lines of text 
+    } */
     nav a {
         font-size: 1rem;
     }
@@ -26,9 +26,19 @@
         margin: 0 auto;
         display: block;
     }
+    .fishing, .skiing, .hiking {
+        display: grid;
+    }
+    #skip {
+        order: 2;
+    }
  
     #outdoor p {
         padding-top: 10px;
         padding-bottom: 10px;
     }
 }
+/* 
+@media (min-width: 400px) and (max-width: 824px) { /* in betweeen font size or picture for banner
+
+} */

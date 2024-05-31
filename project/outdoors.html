@@ -8,28 +8,26 @@
     <meta name="author" content="Sarah Glenn">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/smaller.css">
-    <script src="scripts/project.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;700&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="hero-image">
-            <img class=background src="images/banner1600.webp" alt="trees in a forest">
-            <div class="hero-text">
-                <h1>Explore Skellefteå</h1>
-            </div>
+<header>
+    <div class="hero">
+        <img class=background src="images/banner1600.webp" alt="path in a forest">
+        <div class="hero-text">
+            <h1>Explore Skellefteå</h1>
         </div>
-        <nav>
-            <ul class="navigation">
-                <li><a href=# class="active" id="home" title="Home">Home</a></li>
-                <li><a href=# id="outdoors" title="Outdoors">Outdoors</a></li>
-                <li><a href=# id="culture" title="Culture">Culture</a></li>
-                <li><a href=# id="dining" title="Dining">Dining</a></li>
-            </ul>
-        </nav>
-    </header>
+    </div>
+    <nav>
+        <ul class="navigation">
+            <li><a href=home.html class="active" id="home" title="Home">Home</a></li>
+            <li><a href=outdoors.html id="outdoors" title="Outdoors">Outdoors</a></li>
+            <li><a href=culture.html id="culture" title="Culture">Culture</a></li>
+            <li><a href=dining.html id="dining" title="Dining">Dining</a></li>
+        </ul>
+    </nav>
+</header>
     <main>
         <div id="outdoor">
             <div class="heading">
@@ -38,29 +36,41 @@
                 <hr>
                 <div id="weather">
                     <h2>Current Weather</h2>
-                    <img id="sun" src="images/partly-cloudy.svg" alt="sun behind clouds" width="50">
-                    <ul>
-                        <li><b>Temperature:</b>7 °C</li>
-                        <li><b>Conditions:</b>Partly cloudy</li>
-                        <li><b>Wind:</b>SE at 14.4 kmh</li>
-                    </ul>
+                    <img id="weatherIcon" src="images/clouds.png" alt="weather icon" width="50">
+                    <div class="error">
+                        <p>Cannot retrieve weather information.</p>
+                    </div>
+                    <h3 id="temp" class="temp"></h3>
+                    <div class="degree-button">
+                        <button id="celsius" class="btn1">°C</button>
+                        <button id="fahrenheit" class="btn2">°F</button>
+                    </div>
                 </div>            
             </div>
             <hr>
             <div class="pics">
-                <picture>
-                    <source srcset="images/fishing600x400.webp" media="(min-width: 765px)">
-                    <img src="images/fishing300x350.webp" alt="person holding fishing rod in front of river" loading="lazy">
-                </picture>
-                <p>There are five rivers in Skellefteå, three of which are classified as wild salmon rivers. Such a concentration of salmon waters cannot be found anywhere else in Sweden - and the crown jewel is Byske River. The Byske River is currently experiencing a positive trend. In 2015, more than 5,000 salmon passed through the Fällfors fish waterway. The year before that, nearly 6,000. These are impressive numbers and they have generated a lot of interest in the Byske River in recent years. </p>
-                <img id="ski" src="images/skiing400x600.webp" alt="skiing track in a forest" width="400" height="600"loading="lazy">
-                <p>"Skellefteå offers one of Sweden's best cross-country skiing systems up on Vitberget for those who want to go cross-country skiing. There is a wide range of easy tracks for families and exercisers, but also really tough and hilly ones for us who train hard and compete. In addition, there are about 30 additional tracks around the municipality that are run by associations and enthusiasts, which gives more people the opportunity to go cross-country skiing regularly. "
-                    <br>-- Klas Nilsson, Skellefteå</p>
-                <picture>
-                    <source srcset="images/hiking600x400.webp" media="(min-width: 1000px)">
-                    <img src="images/hiking300x350.webp" alt="adult hiking while carrying a child in a backpack" loading="lazy">
-                </picture>
-                <p>There is plenty to see and experience on foot in Skellefteå, whether you want to walk 30 minutes or trudge for several days. Close to the city or on the coast. Along our beautiful trails and pristine nature reserves. There are picnic areas and noteworthy sights by most of the trails, which are anywhere from 3 to 80 km long. It's time to dust off your backpack and your hiking boots and plan for a real hiking spree.</p>
+                <div class="fishing">
+                    <picture>
+                        <source srcset="images/fishing600x400.webp" media="(min-width: 1000px)">
+                        <img src="images/fishing300x350.webp" alt="person holding fishing rod in front of river" loading="lazy">
+                    </picture>
+                    <p>There are five rivers in Skellefteå, three of which are classified as wild salmon rivers. Such a concentration of salmon waters cannot be found anywhere else in Sweden - and the crown jewel is Byske River. The Byske River is currently experiencing a positive trend. In 2015, more than 5,000 salmon passed through the Fällfors fish waterway. The year before that, nearly 6,000. These are impressive numbers and they have generated a lot of interest in the Byske River in recent years. </p>    
+                </div>
+                <div class="skiing">
+                    <p id="skip">"Skellefteå offers one of Sweden's best cross-country skiing systems up on Vitberget for those who want to go cross-country skiing. There is a wide range of easy tracks for families and exercisers, but also really tough and hilly ones for us who train hard and compete. In addition, there are about 30 additional tracks around the municipality that are run by associations and enthusiasts, which gives more people the opportunity to go cross-country skiing regularly. "
+                        <br>-- Klas Nilsson, Skellefteå</p>
+                    <picture id="ski">
+                        <source srcset="images/skiing400x600.webp" media="(min-width: 1000px)">
+                        <img  src="images/skiing300x350.webp" alt="skiing track in a forest" loading="lazy">
+                    </picture>
+                </div>
+                <div class="hiking">
+                    <picture>
+                        <source srcset="images/hiking600x400.webp" media="(min-width: 1000px)">
+                        <img src="images/hiking300x350.webp" alt="adult hiking while carrying a child in a backpack" loading="lazy">
+                    </picture>
+                    <p>There is plenty to see and experience on foot in Skellefteå, whether you want to walk 30 minutes or trudge for several days. Close to the city or on the coast. Along our beautiful trails and pristine nature reserves. There are picnic areas and noteworthy sights by most of the trails, which are anywhere from 3 to 80 km long. It's time to dust off your backpack and your hiking boots and plan for a real hiking spree.</p>
+                </div>
             </div>
         </div>
     </main>
@@ -69,4 +79,5 @@
         <span id="lastModified"></span>
     </footer>
 </body>
+<script src="scripts/project.js" defer></script>
 </html>
