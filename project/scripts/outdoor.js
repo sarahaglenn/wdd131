@@ -18,6 +18,7 @@ async function getWeather(city) {
     const data = await response.json();
     const tempCelsius = Math.round(data.main.temp);
     const h3 = document.createElement('h3');
+    h3.className = "temp";
     const heading = document.querySelector("#weather");
     h3.innerHTML = `${tempCelsius}°C`;
     heading.insertBefore(h3, heading.childNodes[4]);

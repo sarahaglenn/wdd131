@@ -9,8 +9,3 @@ if (newsButton) {
         window.open("newsletter.html", "_blank");
         });
 }
-
-
-// newsButton.addEventListener("click", function() {
-//     window.open("newsletter.html", "_blank");
-//     });
