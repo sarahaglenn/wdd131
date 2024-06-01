@@ -151,7 +151,9 @@ footer {
     text-decoration: underline;
     color: var(--text-on-color);
 }
+
 /* ----------outdoor page ------------ */
+
 #outdoor {
     max-width: 100%;
 }
