@@ -8,6 +8,7 @@
     <meta name="author" content="Sarah Glenn">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/smaller.css">
+    <script src="scripts/outdoor.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;700&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
@@ -40,7 +41,6 @@
                     <div class="error">
                         <p>Cannot retrieve weather information.</p>
                     </div>
-                    <h3 id="temp" class="temp"></h3>
                     <div class="degree-button">
                         <button id="celsius" class="btn1">°C</button>
                         <button id="fahrenheit" class="btn2">°F</button>
@@ -52,7 +52,7 @@
                 <div class="fishing">
                     <picture>
                         <source srcset="images/fishing600x400.webp" media="(min-width: 1000px)">
-                        <img src="images/fishing300x350.webp" alt="person holding fishing rod in front of river" loading="lazy">
+                        <img src="images/fishing300x350.webp" alt="person holding fishing rod in front of river">
                     </picture>
                     <p>There are five rivers in Skellefteå, three of which are classified as wild salmon rivers. Such a concentration of salmon waters cannot be found anywhere else in Sweden - and the crown jewel is Byske River. The Byske River is currently experiencing a positive trend. In 2015, more than 5,000 salmon passed through the Fällfors fish waterway. The year before that, nearly 6,000. These are impressive numbers and they have generated a lot of interest in the Byske River in recent years. </p>    
                 </div>
@@ -80,5 +80,4 @@
         <a href="sources.html" id="sources" title="Sources">Click for Sources</a>
     </footer>
 </body>
-<script src="scripts/outdoor.js" defer></script>
 </html>
