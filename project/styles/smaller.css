@@ -33,12 +33,19 @@
         order: 2;
     }
  
-    #outdoor p {
-        padding-top: 10px;
-        padding-bottom: 10px;
+    #outdoor p, .heading p {
+        padding: 10px;
+    }
+    #weatherIcon {
+        margin-top: 5px;
+    }
+    .degree-button {
+        margin: 0;
     }
 }
-/* 
-@media (min-width: 400px) and (max-width: 824px) { /* in betweeen font size or picture for banner
 
-} */
+@media (min-width: 600px) and (max-width: 824px) { 
+    .wrapper {
+        text-align: center;
+    }
+}

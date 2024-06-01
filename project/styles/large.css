@@ -87,6 +87,7 @@ main {
 img {
     margin: .5rem;
     border-radius: 6px;
+    box-shadow: 1px 1px 4px #999;
 }
 .wrapper {
     display: grid;
@@ -119,7 +120,7 @@ main p {
     max-width: 700px;
 }
 
-button, .wf1 input[type="submit"] {
+button, .wf1 input[type="submit"] { /* -- subscribe and submit buttons -- */
     max-width: 400px;
     height: 70px;
     font-size: 1.7rem;
@@ -127,9 +128,9 @@ button, .wf1 input[type="submit"] {
     border: none;
     border-radius: 6px;
     box-shadow: 1px 1px 4px #999;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: .25rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: .4rem;
 }
 
 footer {
@@ -140,6 +141,11 @@ footer {
     font-size: 1.1rem;
     margin: 0 auto;
     max-width: 1600px;
+}
+#sources {
+    text-align: right;
+    text-decoration: underline;
+    color: var(--text-on-color);
 }
 /* ----------outdoor page ------------ */
 #outdoor {
@@ -164,7 +170,7 @@ footer {
 
 #weather {
     color: var(--secondary-color);
-    min-width: 200px;
+    min-height: 150px;
     max-width: 300px;
     margin: 10px auto;
     text-align: center;
@@ -261,58 +267,7 @@ li {
     bottom: 0;
 }
 
-/* ---------- Dining Page ------------ EDIT!!!  */ 
-
-/* main {
-    margin: 1rem auto;
-} */
-
-/* #menu {
-    font-size: 2.5rem;
-    font-weight: 500;
-    text-decoration: none;
-    padding: .5rem 1.4rem;
-    background: #1C3144;
-    color: white;
-    position: absolute;
-    left: 0;
-    top: 0;
-} */
-/* 
-#menu::before {
-    content: "≡";
-}
-nav {
-    background: #1C3144;
-    margin: 0 auto;
-    max-width: 760px;
-}
-
-nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-}
-nav li {
-    display: none;
-}
-nav a:hover {
-    background: lightgray;
-    color: #1C3144;
-}
-.show li {
-    display: block;
-}
-
-#menu.show::before {
-    content: "X";
-} */
+/* ---------- Dining Page ------------ */ 
 
 #cards {
     display: grid;
@@ -321,11 +276,12 @@ nav a:hover {
     place-items: center;
     text-align: center;
     margin: .5rem 1.5rem;
+    margin-bottom: 2rem;
 }
 section {
-    background-color: #1c31442e;
+    background-color:#34405a22;
     padding: 0;
-    border: solid 1px #1c31444a;
+    border: solid 1px var(--secondary-color);
     border-radius: 1%;
     min-height: 520px;
     min-width: 250px;
@@ -349,29 +305,17 @@ h3 {
     font-weight: 600;
     margin: 1rem;
 }
-#diningp {
+#diningp, #culturep {
     margin: 0 auto;
     padding: 2rem;
-}
+}  
 
-/*
-p {
-    font-weight: 300;
+/* ---------- SOURCES ------------ */ 
+
+#sourceUrls li {
+    padding: 1rem;
 }
-b {
-    font-weight: 700;
-    color: #1C3144;
-} */
-/* img {
-    width: 100%;
-    height: auto;
-    text-align: center;
+#sourceUrls li a {
     padding: 1rem;
-} */
-/* footer {
-    background: #D6EADF;
-    text-align: center;
-    padding: 1rem;
-} */
-  
-  
+    color: var(--secondary-color);
+}

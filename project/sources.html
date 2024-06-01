@@ -1,7 +1,47 @@
-https://www.visitskelleftea.se/en/guides/activities/hiking/
-
-https://www.derome.se/hallbarhet/vart-ramverk/hallbart-byggande/innovation-utveckling/sara-kulturhus
-
-https://www.visitskelleftea.se/en/explore/articles/salmon-fishing-in-river-byske/
-
-https://www.tripadvisor.com/Restaurants-g227950-Skelleftea_Vasterbotten_County.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Skellefteå</title>
+    <meta name="description" content="This is a site compiling information about activities and leisure life in Skellefteå, Sweden.">
+    <meta name="author" content="Sarah Glenn">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;700&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <img class=background src="images/banner1600.webp" alt="path in a forest">
+            <div class="hero-text">
+                <h1>Explore Skellefteå</h1>
+            </div>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href=index.html class="active" id="home" title="Home">Home</a></li>
+                <li><a href=outdoors.html id="outdoors" title="Outdoors">Outdoors</a></li>
+                <li><a href=culture.html id="culture" title="Culture">Culture</a></li>
+                <li><a href=dining.html id="dining" title="Dining">Dining</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <ol id="sourceUrls">
+            <li><a href=https://www.visitskelleftea.se/en/guides/activities/hiking>Visit Skellefteå</a></li>
+            <li><a href=https://www.derome.se/hallbarhet/vart-ramverk/hallbart-byggande/innovation-utveckling/sara-kulturhus>Sara Kulturhus</a></li>
+            <li><a href=https://www.visitskelleftea.se/en/explore/articles/salmon-fishing-in-river-byske>Visit Skellefteå (hiking)</a></li>
+            <li><a href=https://www.tripadvisor.com/Restaurants-g227950-Skelleftea_Vasterbotten_County.html>Trip Advisor</a></li>
+            <li><a href=https://dev.to/comfortdeola/lets-build-a-weather-application-with-javascript-5agf>DEV Community</a></li>
+        </ol>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Sarah Glenn | Sweden</p>
+         <span id="lastModified"></span>
+    </footer>
+</body>
+</html>
