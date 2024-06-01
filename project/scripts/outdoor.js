@@ -17,7 +17,10 @@ async function getWeather(city) {
 
     const data = await response.json();
     const tempCelsius = Math.round(data.main.temp);
-    document.querySelector(".temp").innerHTML = `${tempCelsius}°C`;
+    const h3 = document.createElement('h3');
+    const heading = document.querySelector("#weather");
+    h3.innerHTML = `${tempCelsius}°C`;
+    heading.insertBefore(h3, heading.childNodes[4]);
 
     if (data.weather[0].main === "Clouds") {
         weatherIcon.src = "images/clouds.png";
