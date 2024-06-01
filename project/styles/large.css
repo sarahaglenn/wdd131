@@ -22,6 +22,8 @@
 
 .background {
     max-width: 100%;
+    max-height: auto;
+    aspect-ratio: 32/7;
     display: block;
     margin: 0 auto;
     filter: brightness(70%);
