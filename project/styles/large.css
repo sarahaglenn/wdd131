@@ -62,6 +62,7 @@ nav a {
     text-align: center;
     padding: 1rem;
     text-decoration: none;
+    border: solid 1px var(--primary-color);
 }
 
 nav ul {
