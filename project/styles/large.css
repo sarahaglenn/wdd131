@@ -219,7 +219,7 @@ li {
 }
 
 .wf1 legend {
-    color: #445ba9;
+    color: var(--secondary-color);
     padding: 0 .5rem;
 }
 

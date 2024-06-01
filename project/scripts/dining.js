@@ -18,7 +18,7 @@ const restaurants = [
     {
         restaurantName: "The Bishops Arms",
         imageSrc: "images/bishopsarms300x200.webp",
-        description: "The Bishops Arms is a delightful mix of restaurant, pub and bar with the focus on artisanal and carefully selected food and drink for all tastes. On the menu, you will find everything from classic pub dishes such as prime rib burgers and Fish n Chips to smaller dishes and tasty desserts.",
+        description: "The Bishops Arms is a delightful mix of restaurant, pub, and bar with a focus on artisanal food and drink for all tastes. On the menu, you will find everything from classic pub dishes such as prime rib burgers and Fish n Chips to smaller dishes and tasty desserts.",
         webUrl: "https://www.bishopsarms.com/vara-pubar/skelleftea/"
     },
     {
