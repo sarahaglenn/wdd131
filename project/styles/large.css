@@ -21,9 +21,9 @@
 /* ---------- hero image & text ------------ */
 
 .background {
-    max-width: 100%;
-    max-height: auto;
     aspect-ratio: 32/7;
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
     filter: brightness(70%);
