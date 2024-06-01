@@ -181,6 +181,9 @@ footer {
     border-radius: 6px;
     box-shadow: 1px 1px 4px #999;
 }
+#weather h3 {
+    font-size: 1.5rem;
+}
 
 #weatherIcon {
     background-color: #6e87bc;
